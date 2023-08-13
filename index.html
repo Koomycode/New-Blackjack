@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="first-page flex">
+
+            <h1 class="title">Blackjack</h1>
+
+            <input type="text" name="playerName" id="player-name" placeholder="Ente your Name">
+
+            <div class="btns flex">
+                <button class="btn" id="5-dollar">
+                    <span>$</span>5
+                </button>
+                <button class="btn" id="50-dollar">
+                    <span>$</span>50
+                </button>
+                <button class="btn" id="100-dollar">
+                    <span>$</span>100
+                </button>
+            </div>
+
+            <button id="submit-btn" type="submit">Start game</button>
+        </div>
+
+        <div class="second-page flex">
+            <h1 class="title">Blackjack</h1>
+            <h4 id="text">Click Start Game</h4>
+
+            <p class="cards-el">Cards <span id="cards-el">: </span></p>
+            <p class="sum-el">Sum <span id="sum-el">: </span></p>
+
+            <button id="start-game">Start Game</button>
+            <button id="draw">Draw Card</button>
+
+            <div class="user flex">
+                <h5 id="userName"></h5>
+                <h5 class="userChips">
+                    $ <span id="userChips"></span>
+                </h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
